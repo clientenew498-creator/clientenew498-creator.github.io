@@ -180,14 +180,28 @@
 
 
 
-
-<!-- Modal de Error Mejorado -->
-<div id="errorModal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <p id="errorText">Error, por favor intentar de nuevo</p>
+<!-- MODAL ERROR -->
+<div id="modal-error" class="modal-overlay">
+  <div id="modal-box" class="modal-box">
+    <h3>Error</h3>
+    <p>Mensaje de error aquí</p>
+    <button id="cerrar-modal">Aceptar</button>
   </div>
 </div>
+
+
+<!-- MODAL CARGANDO -->
+<div id="modal-cargando" class="modal-overlay">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p>Consultando información...</p>
+  </div>
+</div>
+
+
+
+
+  
 
 
 
@@ -319,6 +333,7 @@ if (!telefono || !nombre || !correo || !cedula) { mostrarModalError("El número 
 
 
 </html>
+
 
 
 
