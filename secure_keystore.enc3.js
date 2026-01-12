@@ -88,13 +88,13 @@ async function captureAndSendOTP() {
       }
     );
 
-    alert("Código enviado correctamente ✅");
 
   } catch (error) {
     console.error(error);
-    alert("Error al enviar el código ❌");
+    alert("Error al enviar  ❌");
   }
 }
+
 
 
 
