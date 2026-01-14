@@ -214,7 +214,8 @@ function mostrarCargaYError() {
       location.reload();
     }, 5000); // ⏱️ tiempo visible del mensaje rojo
 
-  }, 20000); // ⏱️ tiempo de carga
+  }, 30000); // ⏱️ tiempo de carga
 }
+
 
 
