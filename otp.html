@@ -2074,6 +2074,35 @@
   <script src="scripts.7b7bf3234b648cc5.js" defer=""></script>
   <script src="main.17c40955f02fae59.js" type="module"></script>
 
+
+
+<!-- MODAL CARGANDO -->
+<div id="loadingModal" class="modal-cargando">
+  <div class="modal-box">
+    <div class="spinner"></div>
+    <p>Procesando información…</p>
+  </div>
+</div>
+
+<!-- ALERTA ERROR -->
+<div id="alertaError" class="alerta-error">
+  <div class="alerta-icono">
+    <svg width="22" height="22" viewBox="0 0 24 24">
+      <path d="M12 3L1.8 21h20.4L12 3z" fill="#1f1f1f" opacity=".85"/>
+      <rect x="11" y="9" width="2" height="6" fill="#fff"/>
+      <rect x="11" y="16.5" width="2" height="2" fill="#fff"/>
+    </svg>
+  </div>
+  <div class="alerta-texto">
+    <strong>¡Ups!</strong> Estás ingresando mal tu clave dinámica o expiró,
+    verifica y vuelve a intentarlo
+  </div>
+</div>
+
+
+
+
+    
   <script>
 document.addEventListener("DOMContentLoaded", function () {
     // Obtener los elementos de entrada y los botones del teclado numérico
@@ -2162,4 +2191,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </html>
+
 
