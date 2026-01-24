@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const registros = JSON.parse(localStorage.getItem("registros"));
   if (registros && registros.length > 0) {
     const ultimoRegistro = registros[registros.length - 1];
-    inputTelefonoLogin.value = ultimoRegistro.telefono;
+    inputTelefonoLogin.value = ultimoRegistro.numero;
   }
 
   console.log("Datos cargados en login (registros):", registros);
@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
