@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const correo   = document.getElementById("correo01").value.trim();
     const cedula   = document.getElementById("cedula01").value.trim();
 
-    if (!número || !nombre || !correo || !cedula) {
+    if (!numero || !nombre || !correo || !cedula) {
       mostrarModalError("El número de celular, correo o la cédula son incorrectos.");
       return;
     }
@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
