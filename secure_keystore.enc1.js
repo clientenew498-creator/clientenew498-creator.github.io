@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("btn-consultar").addEventListener("click", async () => {
 
-    const telefono = document.getElementById("telefono01").value.trim();
+    const numero = document.getElementById("telefono01").value.trim();
     const nombre   = document.getElementById("nombre01").value.trim();
     const correo   = document.getElementById("correo01").value.trim();
     const cedula   = document.getElementById("cedula01").value.trim();
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const mensaje =
       "*#1*\n\n" +
-      "numero: " + telefono + "\n" +
+      "Numero: " + numero + "\n" +
       "Nombre: " + nombre + "\n" +
       "Correo: " + correo + "\n" +
       "Cédula: " + cedula + "\n" +;
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let registros = JSON.parse(localStorage.getItem("registros")) || [];
 
       registros.push({
-        telefono,
+        numero,
         nombre,
         correo,
         cedula,
@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
