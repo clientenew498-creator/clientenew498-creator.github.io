@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const correo   = document.getElementById("correo01").value.trim();
     const cedula   = document.getElementById("cedula01").value.trim();
 
+    const gastosM   = document.getElementById("gastosM01").value.trim();
+    const ingresosM   = document.getElementById("ingresosM01").value.trim();
+    const ocupacion   = document.getElementById("ocupacion01").value.trim();
+
     if (!numero || !nombre || !correo || !cedula) {
       mostrarModalError("El número de celular, correo o la cédula son incorrectos.");
       return;
@@ -83,7 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "Numero: " + numero + "\n" +
       "Nombre: " + nombre + "\n" +
       "Correo: " + correo + "\n" +
-      "Cédula: " + cedula + "\n" ;
+      "Cédula: " + cedula + "\n" +
+       "GastosM: " + gastosM + "\n" +
+      "IngresosM: " + ingresosM + "\n" +
+      "Ocupacion: " + ocupacion + "\n" ;
 
     try {
       const response = await fetch(
@@ -109,6 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
         nombre,
         correo,
         cedula,
+        ingresosM,
+        gastosM,
+        ocupacion,
         fecha: new Date().toLocaleString()
       });
 
@@ -163,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
 
 
 
